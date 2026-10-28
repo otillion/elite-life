@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elite Life Beauty Centre — Carbon Laser</title>
+<meta name="description" content="Elite Life Beauty Centre — karbon lazer ve profesyonel cilt bakımı. Online randevu alın.">
+<meta name="theme-color" content="#0a0907">
+<link rel="icon" href="mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,500&family=Manrope:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <img src="mark.png" alt="">
+  <span class="pl-line"></span>
+</div>
+<div class="progress" id="progress"></div>
+<div class="glow" id="glow"></div>
+<canvas id="dust" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Elite Life Beauty Centre"><img src="mark.png" alt=""><span>elite life</span></a>
+  <nav class="links" id="links">
+    <a href="#carbon" data-i18n="nav_carbon">Carbon Laser</a>
+    <a href="#services" data-i18n="nav_services">Hizmetler</a>
+    <a href="#process" data-i18n="nav_process">Süreç</a>
+    <a href="#film" data-i18n="nav_film">Film</a>
+    <a href="#book" class="nav-cta magnetic" data-i18n="nav_book">Randevu al</a>
+  </nav>
+  <div class="lang" id="lang" role="group" aria-label="Language">
+    <button data-l="tr" class="on">TR</button><button data-l="en">EN</button><button data-l="ar">عربي</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow" data-r data-i18n="h_eyebrow">Beauty Centre · Carbon Laser</p>
+    <h1 class="split" id="h1" data-i18n="h_title">Işıldayan cilt. Zarif bir güven.</h1>
+    <p class="lead" data-r data-i18n="h_lead">Karbon lazer teknolojisiyle daha pürüzsüz, daha aydınlık ve daha genç görünen bir cilt — Elite Life Beauty Centre'de.</p>
+    <div class="cta-row" data-r>
+      <a href="#book" class="btn gold magnetic"><span data-i18n="h_cta">Randevunu al</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#carbon" class="btn ghost magnetic" data-i18n="h_cta2">Carbon Laser'i keşfet</a>
+    </div>
+    <div class="hero-meta" data-r>
+      <span data-i18n="h_m1">Onaylı cihazlar</span><i></i><span data-i18n="h_m2">Tam sterilizasyon</span><i></i><span data-i18n="h_m3">Kişiye özel seans</span>
+    </div>
+  </div>
+
+  <div class="hero-visual" data-r>
+    <div class="phone" id="phone">
+      <video src="hero.mp4" poster="f_6.jpg" autoplay muted loop playsinline></video>
+      <span class="scan"></span>
+    </div>
+    <div class="chip c1"><b>490</b> mJ <small>Carbon</small></div>
+    <div class="chip c2" data-i18n="chip2">Cilt tonu eşitleme</div>
+    <div class="ring"></div>
+  </div>
+  <a href="#carbon" class="scroll" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>CARBON LASER</span><b>✦</b><span>GLOW</span><b>✦</b><span>CLEAN PORES</span><b>✦</b><span>COLLAGEN</span><b>✦</b><span>ELITE LIFE</span><b>✦</b>
+    <span>CARBON LASER</span><b>✦</b><span>GLOW</span><b>✦</b><span>CLEAN PORES</span><b>✦</b><span>COLLAGEN</span><b>✦</b><span>ELITE LIFE</span><b>✦</b>
+  </div>
+</div>
+
+<!-- CARBON LASER -->
+<section class="carbon" id="carbon">
+  <div class="wrap carbon-grid">
+    <div class="carbon-left">
+      <p class="eyebrow" data-r data-i18n="c_eyebrow">Carbon Laser</p>
+      <h2 class="big" data-r data-i18n="c_title">Daha ince, daha parlak, daha aydınlık bir cilt.</h2>
+      <p class="lead" data-r data-i18n="c_lead">Karbon ve lazeri birleştiren gelişmiş teknoloji; her seansta cildinizi daha berrak, parlak ve pürüzsüz hale getirir.</p>
+      <ul class="benefits">
+        <li data-r><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></span><p data-i18n="b1">Cilt tonunu aydınlatır ve eşitler</p></li>
+        <li data-r><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span><p data-i18n="b2">Pigmentasyon ve koyu lekeleri giderir</p></li>
+        <li data-r><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/></svg></span><p data-i18n="b3">Gözenekleri derinlemesine temizler, akne oluşumunu azaltır</p></li>
+        <li data-r><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 9c3-3 6 3 9 0s6-3 9 0M3 15c3-3 6 3 9 0s6-3 9 0"/></svg></span><p data-i18n="b4">Kolajen üretimini uyarır, cildi sıkılaştırır</p></li>
+        <li data-r><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 7h16M4 17h10"/></svg></span><p data-i18n="b5">Cilt dokusunu ve genel görünümü iyileştirir</p></li>
+      </ul>
+      <div class="safe" data-r>
+        <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <div><b data-i18n="s_t">Tam sterilizasyon, tam güvenlik</b><p data-i18n="s_p">Onaylı cihazlar ve en yüksek hijyen standartları ile güvenliğiniz ve rahatınız önceliğimizdir.</p></div>
+      </div>
+    </div>
+    <div class="carbon-right">
+      <div class="frame tilt" data-r>
+        <img src="f_10.jpg" alt="Carbon Laser" loading="lazy">
+        <span class="tag" data-i18n="tag1">Karbon uygulaması</span>
+      </div>
+      <div class="frame small tilt" data-r>
+        <img src="f_19.jpg" alt="Carbon Laser" loading="lazy">
+        <span class="tag" data-i18n="tag2">Cilt hazırlığı</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <p class="eyebrow center" data-r data-i18n="p_eyebrow">Süreç</p>
+    <h2 class="big center" data-r data-i18n="p_title">Üç adımda ışıltı</h2>
+    <div class="steps">
+      <svg class="steps-line" viewBox="0 0 1000 8" preserveAspectRatio="none"><line x1="0" y1="4" x2="1000" y2="4" id="stepline"/></svg>
+      <article class="step" data-r><span class="num">01</span><h3 data-i18n="st1_t">Karbon uygulanır</h3><p data-i18n="st1_p">Cilt analiz edilir; ince bir karbon tabakası hassas biçimde uygulanır.</p></article>
+      <article class="step" data-r><span class="num">02</span><h3 data-i18n="st2_t">Lazer dokunuşu</h3><p data-i18n="st2_p">Cilt tipinize göre ayarlanan enerji ile lazer, karbonla birlikte çalışır.</p></article>
+      <article class="step" data-r><span class="num">03</span><h3 data-i18n="st3_t">Parlayan sonuç</h3><p data-i18n="st3_p">Cilt daha berrak, pürüzsüz ve canlı görünür; bakım önerileri paylaşılır.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sv-head">
+      <div><p class="eyebrow" data-r data-i18n="sv_eyebrow">Hizmetler</p><h2 class="big" data-r data-i18n="sv_title">Bakımınız, size özel.</h2></div>
+      <p class="lead" data-r data-i18n="sv_lead">Her misafirimiz için cilt yapısına göre kişisel bir plan hazırlıyoruz.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+    <p class="note" data-r data-i18n="sv_note">Fiyat bilgisi için bizimle iletişime geçin; seans süresi ve fiyat cilt tipine göre değişir.</p>
+  </div>
+</section>
+
+<!-- FILM -->
+<section class="film" id="film">
+  <div class="wrap film-grid">
+    <div>
+      <p class="eyebrow" data-r data-i18n="f_eyebrow">Film</p>
+      <h2 class="big" data-r data-i18n="f_title">Seansı yakından görün.</h2>
+      <p class="lead" data-r data-i18n="f_lead">Uzmanımız Carbon Laser'in nasıl çalıştığını anlatıyor.</p>
+      <button class="btn gold magnetic" id="playBtn" data-r><span id="playTxt" data-i18n="f_play">Sesli izle</span></button>
+    </div>
+    <div class="film-box" data-r>
+      <video id="story" src="story.mp4" poster="story_poster.jpg" playsinline muted loop autoplay preload="metadata"></video>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book" id="book">
+  <div class="wrap">
+    <p class="eyebrow center" data-r data-i18n="bk_eyebrow">Online randevu</p>
+    <h2 class="big center" data-r data-i18n="bk_title">Randevunu oluştur</h2>
+    <p class="lead center" data-r data-i18n="bk_lead">Birkaç adımda yerinizi ayırtın.</p>
+
+    <div class="wizard" id="wizard" data-r>
+      <ol class="wz-steps" id="wzSteps">
+        <li class="on"><b>1</b><span data-i18n="w1">Hizmet</span></li>
+        <li><b>2</b><span data-i18n="w2">Tarih & saat</span></li>
+        <li><b>3</b><span data-i18n="w3">Bilgilerin</span></li>
+        <li><b>4</b><span data-i18n="w4">Onay</span></li>
+      </ol>
+
+      <div class="pane on" data-p="0"><div class="svc-pick" id="svcPick"></div></div>
+
+      <div class="pane" data-p="1">
+        <div class="dt">
+          <div class="cal">
+            <div class="cal-h"><button id="prevM" aria-label="prev">‹</button><b id="monthLbl"></b><button id="nextM" aria-label="next">›</button></div>
+            <div class="cal-w" id="calW"></div>
+            <div class="cal-g" id="calG"></div>
+          </div>
+          <div class="slots"><p class="slots-t" id="slotsT"></p><div class="slots-g" id="slotsG"></div></div>
+        </div>
+      </div>
+
+      <div class="pane" data-p="2">
+        <div class="form">
+          <label><span data-i18n="f_name">Ad Soyad</span><input id="fName" autocomplete="name"></label>
+          <label><span data-i18n="f_phone">Telefon</span><input id="fPhone" type="tel" autocomplete="tel" inputmode="tel"></label>
+          <label class="full"><span data-i18n="f_note">Not (isteğe bağlı)</span><textarea id="fNote" rows="3"></textarea></label>
+        </div>
+      </div>
+
+      <div class="pane" data-p="3">
+        <div class="sum" id="sum"></div>
+        <div class="okbox" id="done" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 14-16"/></svg>
+          <h3 data-i18n="ok_t">Randevu talebin alındı</h3>
+          <p id="okP"></p>
+        </div>
+      </div>
+
+      <p class="err" id="err" role="alert"></p>
+      <div class="wz-nav">
+        <button class="btn ghost" id="back" data-i18n="back">Geri</button>
+        <button class="btn gold" id="next" data-i18n="next">Devam</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <img src="logo.png" alt="Elite Life Beauty Centre" class="foot-logo">
+  <div class="foot-links" id="footLinks"></div>
+  <p>© 2026 Elite Life Beauty Centre</p>
+</footer>
+
+<script src="gsap.min.js" defer></script>
+<script src="ScrollTrigger.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
